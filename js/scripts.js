@@ -1,3 +1,13 @@
+// change title when user changes tab
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Come Back ;(";
+});
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
+
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
