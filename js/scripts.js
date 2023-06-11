@@ -10,24 +10,24 @@ window.addEventListener("focus", () => {
 // email with js
 function sendMail() {
   var params = {
-    name: document.getElementById("full_name").value,
-    email: document.getElementById("email_address").value,
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
     number: document.getElementById("number").value,
-    emailSubject: document.getElementById("email_subject").value,
-    yourMessage: document.getElementById("your_message").value,
+    emailSubject: document.getElementById("emailSubject").value,
+    message: document.getElementById("message").value,
   };
 
   const serviceId = "service_pbwid9l";
-  const templateId = "template_4r207fm";
+  const templateId = "template_0oqjg03";
 
   emailjs
     .send(serviceId, templateId, params)
     .then((res) => {
-      document.getElementById("full_name").value = "";
-      document.getElementById("email_address").value = "";
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
       document.getElementById("number").value = "";
-      document.getElementById("email_subject").value = "";
-      document.getElementById("your_message").value = "";
+      document.getElementById("emailSubject").value = "";
+      document.getElementById("message").value = "";
       console.log(res);
       alert("your message sent successfully");
     })
