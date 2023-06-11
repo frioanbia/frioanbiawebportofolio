@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #081b29;
-  --second-bg-color: #112e42;
+  --bg-color: #0b486b;
+  --second-bg-color: #3b8686;
   --text-color: #ededed;
-  --main-color: #00abf0;
+  --main-color: #79bd9a;
 }
 
 html {
@@ -76,6 +76,8 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
+
+/* tempat menaru foto home background */
 
 .home {
   display: flex;
