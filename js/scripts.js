@@ -7,6 +7,32 @@ window.addEventListener("focus", () => {
   document.title = docTitle;
 });
 
+// email with js
+function sendMail() {
+  var params = {
+    name: document.getElementById("full_name").value,
+    email: document.getElementById("email_address").value,
+    number: document.getElementById("number").value,
+    emailSubject: document.getElementById("email_subject").value,
+    yourMessage: document.getElementById("your_message").value,
+  };
+
+  const serviceId = "service_pbwid9l";
+  const templateId = "template_4r207fm";
+
+  emailjs
+    .send(serviceId, templateId, params)
+    .then((res) => {
+      document.getElementById("full_name").value = "";
+      document.getElementById("email_address").value = "";
+      document.getElementById("number").value = "";
+      document.getElementById("email_subject").value = "";
+      document.getElementById("your_message").value = "";
+      console.log(res);
+      alert("your message sent successfully");
+    })
+    .catch((err) => console.log(err));
+}
 // toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");

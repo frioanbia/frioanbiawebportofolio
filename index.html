@@ -13,6 +13,13 @@
     <link rel="icon" type="image/png" href="icon/icon.png" />
   </head>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("kZimQACb8RnPJMczZ");
+    })();
+  </script>
+
   <body>
     <!-- headers desgin-->
 
@@ -198,38 +205,38 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#" onsubmit="submitEmail(); reset(); return false;">
+      <form>
         <div class="input-box">
           <div class="input-field">
-            <input type="text" placeholder="Full Name" required />
+            <input id="full_name" type="text" placeholder="Full Name" required />
             <span class="focus"></span>
           </div>
 
           <div class="input-field">
-            <input type="text" placeholder="Email Address" required />
+            <input id="email_address" type="text" placeholder="Email Address" required />
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="input-box">
           <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required />
+            <input id="number" type="number" placeholder="Mobile Number" required />
             <span class="focus"></span>
           </div>
 
           <div class="input-field">
-            <input type="text" placeholder="Email Subject" required />
+            <input id="email_subject" type="text" placeholder="Email Subject" required />
             <span class="focus"></span>
           </div>
         </div>
 
         <div class="textarea-field">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <textarea name="" id="your_message" cols="30" rows="10" placeholder="Your Message" required></textarea>
           <span class="focus"></span>
         </div>
 
         <div class="btn-box btns">
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn" onclick="sendMail()">Submit</button>
         </div>
       </form>
     </section>
