@@ -40,7 +40,7 @@ function validation() {
       };
       const serviceId = "service_pbwid9l";
       const templateId = "template_0oqjg03";
-      emailjs
+      email
         .send(serviceId, templateId, params)
         .then((res) => {
           document.getElementById("name").value = "";
