@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #0b486b;
+  --bg-color: #05507c;
   --second-bg-color: #3b8686;
   --text-color: #ededed;
-  --main-color: #79bd9a;
+  --main-color: #4dab7a;
 }
 
 html {
@@ -83,7 +83,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url("") no-repeat;
+  background: url("/icon/frio.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
