@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/fric2837/repositories/frioanbiaportofolio
+    - export DEPLOYPATH=/home/fric2837/repositories/frioanbiaportofolio/public_html/
     - /bin/cp -r index.html $DEPLOYPATH
     - /bin/cp -r style.css $DEPLOYPATH
     - /bin/cp -r images $DEPLOYPATH
