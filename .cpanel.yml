@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fric2837/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R css style.css $DEPLOYPATH
+    - /bin/cp -R css mediaqueries.css $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R js script.js $DEPLOYPATH
